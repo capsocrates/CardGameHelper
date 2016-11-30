@@ -5,6 +5,8 @@
 
 #pragma once
 
+#pragma warning ( push, 1 )
+
 static_assert(sizeof(void*) == 8, "64-bit compilation only");
 
 #include "targetver.h"
@@ -15,12 +17,16 @@ static_assert(sizeof(void*) == 8, "64-bit compilation only");
 #include <algorithm>
 #include <chrono>
 #include <experimental\filesystem>
+#include <fstream>
 #include <iostream>
+#include <sstream>
 #include <string>
 #include <vector>
 
 #include <boost\algorithm\algorithm.hpp>
 #include <boost\algorithm\string.hpp>
+#include <boost\archive\xml_iarchive.hpp>
+#include <boost\archive\xml_oarchive.hpp>
 #include <boost\concept_check.hpp>
 #include <boost\core\swap.hpp>
 #include <boost\iterator.hpp>
@@ -34,6 +40,8 @@ static_assert(sizeof(void*) == 8, "64-bit compilation only");
 #include <boost\logic\tribool_io.hpp>
 #include <boost\variant.hpp>
 #include <boost\utility\string_view.hpp>
+
+#pragma warning( pop )
 
 #include <gsl\gsl_algorithm>
 #include <gsl\gsl_assert>

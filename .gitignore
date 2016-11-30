@@ -60,3 +60,8 @@ Temporary Items
 *.pch
 *.plist
 *.exe
+*.exp
+*.lib
+Debug/main.nativecodeanalysis.xml
+Debug/stdafx.nativecodeanalysis.xml
+*.pchast
